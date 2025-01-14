@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - Carbon Footprint Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="/" class="logo">EcoTrack</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#inspiration">Inspiration</a>
+            <a href="#rate">Rate Us</a>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="welcome-text">Welcome to</div>
+            <h1>EcoTrack</h1>
+            <p>Your personal journey towards a sustainable future</p>
+        </div>
+    </section>
+
+    <section id="about" data-aos="fade-up">
+        <h2>Our Vision</h2>
+        <div class="features">
+            <div class="feature-card">
+                <h3>🧮 Smart Calculator</h3>
+                <p>Calculate your carbon footprint from daily activities including travel, energy usage, and consumption patterns.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📊 Personal Dashboard</h3>
+                <p>Track your progress over time with intuitive visualizations and personalized insights.</p>
+            </div>
+            <div class="feature-card">
+                <h3>💡 Smart Recommendations</h3>
+                <p>Receive tailored suggestions to reduce your carbon footprint effectively.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="inspiration" data-aos="fade-up">
+        <h2>Industry Inspirations</h2>
+        <div class="inspiration-cards">
+            <div class="inspiration-card">
+                <h3>Apple</h3>
+                <p>Committed to 100% carbon neutrality by 2030 across entire business, manufacturing, and product lifecycle.</p>
+            </div>
+            <div class="inspiration-card">
+                <h3>Samsung</h3>
+                <p>Committed to achieving net zero carbon emissions by 2050 and 100% renewable energy in all operations by 2027.</p>
+            </div>
+            <div class="inspiration-card">
+                <h3>Xiaomi</h3>
+                <p>Implementing sustainable packaging solutions and targeting carbon neutrality by 2040 across global operations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rate" data-aos="fade-up">
+        <h2>Rate Our Initiative</h2>
+        <div id="user-input" class="user-input">
+            <input type="text" id="username" placeholder="Enter your name to rate">
+            <button onclick="setUsername()">Continue</button>
+        </div>
+        
+        <div id="rating-section" class="hidden">
+            <p class="rating-instruction">Click any reaction below to rate!</p>
+            <div class="emoji-container">
+                <div class="emoji-card" data-emoji="fire">
+                    <div class="emoji">🔥</div>
+                    <span class="count">0</span>
+                    <span class="label">Love it!</span>
+                    <div class="users-list"></div>
+                </div>
+                <div class="emoji-card" data-emoji="ok">
+                    <div class="emoji">👌</div>
+                    <span class="count">0</span>
+                    <span class="label">Good</span>
+                    <div class="users-list"></div>
+                </div>
+                <div class="emoji-card" data-emoji="trash">
+                    <div class="emoji">🗑️</div>
+                    <span class="count">0</span>
+                    <span class="label">Needs Work</span>
+                    <div class="users-list"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="thank-you" class="hidden">
+            <p>Thank you for rating, <span id="user-name-display"></span>!</p>
+        </div>
+    </section>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <footer>
+        <p>© 2025 EcoTrack - Making Earth Greener 🌍</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
